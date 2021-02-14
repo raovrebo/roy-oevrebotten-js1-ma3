@@ -27,8 +27,8 @@ async function getGames() {
             break;
             }
             resultsContainer.innerHTML += `<div class="result"><strong>Name: </strong>${gamesName} <br>
-                                        <strong>Rating: </strong>${gamesRating} <br>
-                                        <strong>Number of tags: </strong>${numberOfGameTags}</div>`;                                  
+                                            <strong>Rating: </strong>${gamesRating} <br>
+                                            <strong>Number of tags: </strong>${numberOfGameTags}</div>`;                                  
         }
     } catch (error) {
         console.log("An error occurred");
