@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: lightslategrey;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  margin-left: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  max-width: 150px;
+  background: ghostwhite;
+  border-radius: 0.5rem;
+}
+
+.loader {
+  border: 30px solid orange;
+  border-top: 30px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
